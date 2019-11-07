@@ -43,5 +43,22 @@ public class BaseDataTypeDemo {
         int z2 = (int) z1;
         char z3 = (char) z2;
         System.out.println("double转int再转char: " + z1 + " -> " + z2 + " -> " + z3);
+
+        // == 和 .equals() 的使用
+        // == 比较基本数据类型时，比较的数值是否一样
+        // == 比较两个对象时，比较的是两个对象的地址值
+        int num1 = 123;
+        int num2 = 123;
+        System.out.println(num1 == num2);
+        String str1 = "hello";
+        String str2 = "hello";
+        String str3 = new String("hello");
+        String str4 = new String("hello");
+        //String重写了.equals()方法，如果两个对象地址值一样，返回true
+        //如果地址值不一样，比较两个对象的值是否一样，一样就返回true
+        //==在对象中比较的是地址值，str1和str2都指向了常量池中的"hello"，所以地址值一样
+        System.out.println(str1 == str2);
+        System.out.println(str1 == str3);
+        System.out.println(str3 == str4);
     }
 }
