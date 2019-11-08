@@ -1,6 +1,7 @@
 package com.zxd.c;
 
-//循环
+//三种循环的使用
+//continue、break的使用
 public class LoopDemo {
 
     public static void main(String[] args) {

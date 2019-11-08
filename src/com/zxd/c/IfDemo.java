@@ -1,6 +1,6 @@
 package com.zxd.c;
 
-//if...else
+//if...else语句
 public class IfDemo {
     public static void main(String[] args) {
         int a = 50;
