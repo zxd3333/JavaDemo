@@ -1,5 +1,6 @@
 package com.zxd.f;
 
+//子类
 public class Cat extends Animal {
 
     //第二部分：研究子类父类构造方法的执行顺序

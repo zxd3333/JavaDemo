@@ -1,5 +1,6 @@
 package com.zxd.f;
 
+//父类
 public class Animal {
 
     //第一部分：定义动物类的属性和行为
