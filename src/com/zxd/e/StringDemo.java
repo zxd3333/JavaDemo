@@ -1,6 +1,6 @@
 package com.zxd.e;
 
-//String、StringBuilder、StringBuffer
+//String、StringBuilder、StringBuffer的使用
 public class StringDemo {
 
     public static void main(String[] args) {
