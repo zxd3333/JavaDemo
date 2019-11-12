@@ -1,6 +1,7 @@
 package com.zxd.j;
 
 //ArrayList使用的学生类
+//标准学生类
 public class Student {
 
     private int id;
