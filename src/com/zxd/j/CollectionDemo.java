@@ -25,7 +25,6 @@ public class CollectionDemo {
 
             //ArrayList的父类的父类重写了toString方法，所以这里不会输出地址值
             System.out.println("添加某些元素之后的集合：" + collection);
-
         }
         //判断集合的长度
         if (collection.size() < 1){
