@@ -23,5 +23,11 @@ public class SetDemo {
         for (String s : set){
             System.out.println(s);
         }
+
+        //返回一个包含所有set元素的数组
+        Object[] array = set.toArray();
+        for (int i = 0; i < array.length; i++){
+            System.out.println(array[i]);
+        }
     }
 }
