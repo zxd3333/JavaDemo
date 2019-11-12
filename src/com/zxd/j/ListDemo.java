@@ -7,7 +7,7 @@ import java.util.ListIterator;
 
 //List集合的使用
 //List是一个接口
-//List集合是有序的，它有索引，允许重复的元素
+//List集合是有序的，它有索引，允许有重复的元素
 public class ListDemo {
 
     public static void main(String[] args) {
