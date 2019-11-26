@@ -3,7 +3,7 @@
        JDK也提供了大量的内置函数式接口供我们使用，使得Lambda表达式的运用更加方便、高效。
 * 格式：(参数类型 参数名称)->{ 代码块 }
 * 解析：
-    * 形式参数：多个参数逗号隔开，没有参数留空即可
+    * 形式参数：重写的方法的参数，多个参数逗号隔开，没有参数留空即可
     * ->：箭头，代表指向动作
     * 代码块：相当于我们以前重写的方法体
 * 使用前提：
@@ -29,3 +29,25 @@
 # 对比
 Lambda表达式：编译之后，对应的字节码文件会在运行的时候自动生成
 匿名内部类：编译之后，产生一个单独的.class字节码文件
+
+# 方法引用符    ::
+方法引用符是在Lambda的基础上加以改进的更简便的写法
+* 分类：
+    * 通过类名引用静态方法
+        * Lambda表达式： Hi(s->Integer.parseInt(s));
+        * 方法引用符： Hi(Integer::parseInt);
+        * 形式参数(s)会传递给Integer类的静态方法(parseInt())
+    * 通过对象名引用成员方法
+        * Lambda表达式： Hi(s->System.out.println(s.toUpperCase()));
+        * 方法引用符：创建一个需要用到的类的对象 Demo demo = new Demo();   通过对象引用成员方法  Hi(demo::changeBig());
+        * 形式参数(s)会全部传递给引用的方法(changeBig()) 
+    * 通过类名引用成员方法
+        * Lambda表达式： Hi((s,x,y)->s.substring(x,y));
+        * 方法引用符： Hi(String::substring);
+        * 第一个参数(s)作为调用者，后面的参数(x,y)传递给引用的方法
+    * 引用构造器创建对象
+            * Lambda表达式： Hi((name,age)->new Student(name,age));
+            * 方法引用符： Hi(Student::new);
+            * 形式参数(name,age)会全部传递给构造器(带参构造器)
+    
+    
