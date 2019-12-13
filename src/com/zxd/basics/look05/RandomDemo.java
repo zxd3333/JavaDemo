@@ -1,9 +1,9 @@
-package com.zxd.basics.e;
+package com.zxd.basics.look05;
 
 import java.util.Random;
 import java.util.Scanner;
 
-//Random类的初步使用
+// Random类的初步使用
 public class RandomDemo {
 
     public static void main(String[] args) {
