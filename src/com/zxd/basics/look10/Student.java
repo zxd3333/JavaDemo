@@ -1,7 +1,6 @@
-package com.zxd.basics.j;
+package com.zxd.basics.look10;
 
-//ArrayList使用的学生类
-//标准学生类
+// ArrayList编写的学生管理系统使用的学生类
 public class Student {
 
     private int id;

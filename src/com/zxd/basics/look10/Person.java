@@ -1,6 +1,5 @@
-package com.zxd.basics.j;
+package com.zxd.basics.look10;
 
-//TreeSetDemo定义的类
 public class Person implements Comparable<Person>{
 
     private String name;
@@ -41,11 +40,12 @@ public class Person implements Comparable<Person>{
     @Override
     public int compareTo(Person person) {
 
-        //如果年龄不一样，就返回差值
-        //如果年龄一样，就比较姓名
-        //最后返回值如果大于零，就是正向排序，反之逆向
+        // 首先比较年龄
+        // 如果年龄一样，就比较姓名，年龄不一样就返回年龄的差值
+        // 如果最后返回的num2为0，则表示元素是重复的，就不会添加该元素
+        // 如果num2大于0，则按顺序排列，如果小于0，就按倒序排列
         int num = this.age - person.age;
-        int num2 = num == 0 ? this.name.compareTo(person.name) : num;
+        int num2 = (num == 0) ? this.name.compareTo(person.name) : num;
         return num2;
     }
 }

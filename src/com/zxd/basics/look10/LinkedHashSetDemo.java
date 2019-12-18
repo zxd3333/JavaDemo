@@ -1,13 +1,13 @@
-package com.zxd.basics.j;
+package com.zxd.basics.look10;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 
-//LinkedHashSet的底层结构是哈希表和链表
-//因为链表的缘故，它里面元素的存入和取出的顺序一致
-//它实现了Set接口，所以也没有索引
-//因为哈希表，使得它不包含重复元素
-//它的父类是HashSet，它主要的优化就是实现了元素的有序输入输出
+// LinkedHashSet的底层结构是哈希表和链表
+// 因为链表的缘故，它里面元素的存入和取出的顺序一致
+// 它实现了Set接口，所以也没有索引
+// 因为哈希表，使得它不包含重复元素
+// 它的父类是HashSet，它主要的优化就是实现了元素的有序输入输出
 public class LinkedHashSetDemo {
 
     public static void main(String[] args) {

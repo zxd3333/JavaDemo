@@ -1,19 +1,21 @@
-package com.zxd.basics.j;
+package com.zxd.basics.look10;
 
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-//TreeSet是一个有序的集合类
-//它里面的元素是有顺序的，主要作用是提供有序的Set集合
-//没有索引
-//不包含重复元素
-//基于TreeMap
-//排序方式：自然排序（Comparable）和比较器排序（Comparator）
+// TreeSet是一个有序的集合类
+// 它里面的元素是有顺序的，主要作用是提供有序的Set集合
+// 没有索引
+// 不包含重复元素
+// 基于TreeMap红黑树
+// 排序方式：自然排序（Comparable）和比较器排序（Comparator）
 public class TreeSetDemo {
 
     public static void main(String[] args) {
-        //自然排序：无参构造方法，让元素所属的类实现Comparable<?>接口，重写里面的compareTo方法
+
+        // TreeSet集合的无参构造方法会根据元素的自然排序进行排序
+        // 自然排序：一个类要实现自然排序，就必须实现Comparable<?>接口，重写里面的compareTo方法
         TreeSet<Person> treeSet = new TreeSet<>();
 
         Person p1 = new Person("a",10);
@@ -21,6 +23,7 @@ public class TreeSetDemo {
         Person p3 = new Person("c",30);
         Person p4 = new Person("d",10);
 
+        // 参考TreeMap的put()方法源码
         treeSet.add(p1);
         treeSet.add(p2);
         treeSet.add(p3);
@@ -31,8 +34,8 @@ public class TreeSetDemo {
         }
         System.out.println("=======================");
 
-        //比较器排序：带参构造方法
-        //通过匿名内部类的方式实现Comparator接口并重写其方法
+        // 比较器排序：带参构造方法
+        // 通过匿名内部类的方式实现Comparator接口并重写其方法
         TreeSet<Person> ts = new TreeSet<>(new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
