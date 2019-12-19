@@ -1,4 +1,4 @@
-package com.zxd.basics.n;
+package com.zxd.basics.look14;
 
 //中断线程
 public class InterruptThreadDemo extends Thread{

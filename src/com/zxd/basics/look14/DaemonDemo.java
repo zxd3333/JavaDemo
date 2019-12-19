@@ -1,4 +1,4 @@
-package com.zxd.basics.n;
+package com.zxd.basics.look14;
 
 //守护线程
 //守护线程是指在程序运行的时候在后台提供一种通用服务的线程，这种线程并不属于程序中不可或缺的部分

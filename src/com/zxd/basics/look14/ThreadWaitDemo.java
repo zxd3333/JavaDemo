@@ -1,4 +1,4 @@
-package com.zxd.basics.n;
+package com.zxd.basics.look14;
 
 //线程控制
 //sleep()只能让当前线程睡眠

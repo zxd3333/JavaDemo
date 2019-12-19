@@ -1,4 +1,4 @@
-package com.zxd.basics.n;
+package com.zxd.basics.look14;
 
 //生产者消费者
 //买牛奶：有一个盒子用来放牛奶

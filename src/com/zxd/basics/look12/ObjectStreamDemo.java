@@ -1,7 +1,5 @@
 package com.zxd.basics.look12;
 
-import com.zxd.basics.m.ObjectStreamStudent;
-
 import java.io.*;
 
 // 对象序列化流

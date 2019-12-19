@@ -1,4 +1,4 @@
-package com.zxd.basics.n;
+package com.zxd.basics.look14;
 
 //测试类
 public class MilkTest {

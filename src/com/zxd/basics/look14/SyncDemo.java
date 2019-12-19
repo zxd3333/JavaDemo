@@ -1,4 +1,4 @@
-package com.zxd.basics.n;
+package com.zxd.basics.look14;
 
 //synchronized关键字
 //每个对象有且仅有一个同步锁。这也意味着，同步锁是依赖于对象而存在的
